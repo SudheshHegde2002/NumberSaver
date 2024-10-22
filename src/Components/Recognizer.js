@@ -22,7 +22,7 @@ const Recognizer = () =>{
   
       try {
         const subscriptionKey = api_key;
-        const endpoint =azure_endpoint;
+        const endpoint ="https://numext.cognitiveservices.azure.com/";
   
         const cognitiveServiceCredentials = new ApiKeyCredentials({
           inHeader: { 'Ocp-Apim-Subscription-Key': subscriptionKey }

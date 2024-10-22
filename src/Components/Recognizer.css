@@ -66,19 +66,19 @@
 
   
   .card {
-    border-radius: 15px !important; /* Rounded corners for Bootstrap cards */
-  }
-  
-  h2 {
-    font-family: 'Roboto', sans-serif; /* Use a different font for headers */
-  }
-  
-  .btn {
-    font-size: 16px; /* Slightly larger buttons */
-    font-weight: bold; /* Bold text */
-  }
-  
-  .preformatted-text {
-    background-color: #e8e8e8; /* Light background for recognized text */
-    border-radius: 5px;
-  }
+  border-radius: 15px !important; /* Rounded corners for Bootstrap cards */
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif; /* Use a different font for headers */
+}
+
+.btn {
+  font-size: 16px; /* Slightly larger buttons */
+  font-weight: bold; /* Bold text */
+}
+
+.preformatted-text {
+  background-color: #e8e8e8; /* Light background for recognized text */
+  border-radius: 5px;
+}
