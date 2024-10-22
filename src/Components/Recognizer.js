@@ -9,7 +9,6 @@ const Recognizer = () =>{
     const [recognizedText, setRecognizedText] = useState('');
     const [vcfFile, setVcfFile] = useState(null);
     const api_key = process.env.REACT_APP_AZURE_KEY;
-    const azure_endpoint = process.env.REACT_APP_AZ_ENDPOINT;
     const handleFileUpload = (file) => {
       setImageData(file.base64);
     };
