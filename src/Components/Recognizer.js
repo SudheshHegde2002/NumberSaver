@@ -8,8 +8,8 @@ const Recognizer = () =>{
     const [imageData, setImageData] = useState(null);
     const [recognizedText, setRecognizedText] = useState('');
     const [vcfFile, setVcfFile] = useState(null);
-    const api_key = process.env.azure_key;
-    const azure_endpoint = process.env.az_endpoint
+    const api_key = process.env.REACT_APP_AZURE_KEY;
+    const azure_endpoint = process.env.REACT_APP_AZ_ENDPOINT;
     const handleFileUpload = (file) => {
       setImageData(file.base64);
     };
@@ -22,7 +22,7 @@ const Recognizer = () =>{
   
       try {
         const subscriptionKey = api_key;
-        const endpoint = azure_endpoint;
+        const endpoint =azure_endpoint;
   
         const cognitiveServiceCredentials = new ApiKeyCredentials({
           inHeader: { 'Ocp-Apim-Subscription-Key': subscriptionKey }
